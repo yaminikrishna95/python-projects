@@ -1,0 +1,10 @@
+words=(    "apple",
+    "tiger",
+    "python",
+    "grape",
+    "chair",
+    "river",
+    "cloud",
+    "bread",
+    "stone",
+    "light")
