@@ -1,30 +1,48 @@
 class Animal:
-	def eat(self):
-		print("Eating animal")
-	def sleep(self):
-		print("Sleeping animal")
+    def __init__(self, name):
+        self.name = name
+
+    def eat(self):
+        print(f"{self.name} is eating")
+
+    def sleep(self):
+        print(f"{self.name} is sleeping")
+
 
 class Prey(Animal):
-	def flee(self):
-		print("This animal is fleeing")
+    def flee(self):
+        print(f"{self.name} is fleeing")
 
 
 class Predator(Animal):
-	def hunt(self):
-		print("This animal is hunting")
+    def hunt(self):
+        print(f"{self.name} is hunting")
 
-class rabbit(Prey):
-	pass
 
-class hawk( Predator):
-	pass
+class Rabbit(Prey):
+    pass
+
+
+class Hawk(Predator):
+    pass
+
 
 class Fish(Prey, Predator):
+    pass
 
-	pass
 
-Rabbit= rabbit()
-hawk=  hawk()
-Fish = Fish()
+# Creating objects
+rabbit = Rabbit("Bug")
+hawk = Hawk("Sky Hunter")
+fish = Fish("Nemo")
 
-Fish.eat()
+# Calling methods
+rabbit.eat()
+rabbit.flee()
+
+hawk.eat()
+hawk.hunt()
+
+fish.eat()
+fish.flee()
+fish.hunt()
