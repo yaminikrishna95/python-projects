@@ -17,22 +17,34 @@ class Employee:
 	def apply_raise(self):
 		self.pay = int(self.pay * self.raise_amount )
 		return(self.pay)
+	@classmethod
+	def set_raise_amount(cls,amount):
+		cls.raise_amount = amount
 
 
-print(Employee.num_of_emps)
+
 emp_1 = Employee("James","Smith",50000)
 emp_2 = Employee("laura","Smith",60000)
-print(Employee.num_of_emps)
+Employee.set_raise_amount(1.05)
+emp_2.raise_amount = 1.06
+print(emp_1.raise_amount)
+print(emp_2.raise_amount)
+
+
+
+
+
+#print(Employee.num_of_emps)
 #print(emp_1.fullname())
 #print(Employee.fullname(emp_1))
 #print(emp_2.fullname())
-emp_1.raise_amount = 1
+#emp_1.raise_amount = 1
 #print(emp_1.apply_raise())
 #print(Employee.apply_raise(emp_2))
 #print(Employee.__dict__)
-print(emp_1.__dict__)
-print(emp_2.__dict__)
-print(emp_2.raise_amount)
-print(Employee.raise_amount)
-print(emp_1.raise_amount)
-print(Employee.apply_raise(emp_2))
+#print(emp_1.__dict__)
+#print(emp_2.__dict__)
+#print(emp_2.raise_amount)
+#print(Employee.raise_amount)
+#print(emp_1.raise_amount)
+#print(Employee.apply_raise(emp_2))
