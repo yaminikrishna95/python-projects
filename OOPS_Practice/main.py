@@ -4,7 +4,7 @@ from six import raise_from
 class Employee:
 	num_of_emps = 0
 
-
+	raise_amount = 1.05
 	def __init__(self,first,last,pay):
 		self.first = first
 		self.last = last
@@ -53,8 +53,8 @@ print(Employee.is_workday(my_datetime))
 #print(emp_1.fullname())
 #print(Employee.fullname(emp_1))
 #print(emp_2.fullname())
-#emp_1.raise_amount = 1
-#print(emp_1.apply_raise())
+emp_1.raise_amount = 2
+print(emp_1.apply_raise())
 #print(Employee.apply_raise(emp_2))
 #print(Employee.__dict__)
 #print(emp_1.__dict__)
