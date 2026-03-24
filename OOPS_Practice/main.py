@@ -49,7 +49,7 @@ print(Employee.is_workday(my_datetime))
 
 
 
-#print(Employee.num_of_emps)
+print(Employee.num_of_emps)
 #print(emp_1.fullname())
 #print(Employee.fullname(emp_1))
 #print(emp_2.fullname())
