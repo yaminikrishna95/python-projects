@@ -111,6 +111,7 @@ def safe_function():
 def risky_function():
     raise ValueError("An error occurred in risky_function.")
 
+
 def safe_function():
     try:
         risky_function()
